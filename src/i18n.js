@@ -97,7 +97,7 @@ export const translations = {
 
     // Hero
     expressBadge: 'Ekspress xizmat',
-    heroTitle1: 'Muhrtaymi? Toshkentda',
+    heroTitle1: 'Pechat kerakmi? Toshkentda',
     heroTime: '30 daqiqa',
     heroTitle2: 'da tayyorlaymiz',
     heroDesc: 'Rasmiy foydalanish uchun yuqori sifatli COLOP muhrlari. Siz kutayotganingizda professional maket bepul ishlab chiqiladi.',
