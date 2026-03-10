@@ -1,24 +1,30 @@
 import React from 'react';
+import { LanguageProvider } from './LanguageContext';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Features from './components/Features';
-import Philosophy from './components/Philosophy';
-import Protocol from './components/Protocol';
-import Stats from './components/Stats';
+import Products from './components/Products';
+import Process from './components/Process';
+import FAQ from './components/FAQ';
+import Location from './components/Location';
 import Footer from './components/Footer';
 
 function App() {
   return (
-    <div className="min-h-screen bg-corporate-dark text-white font-sans selection:bg-corporate-accent2/30 selection:text-white">
-      <div className="noise-overlay"></div>
-      <Navbar />
-      <Hero />
-      <Features />
-      <Philosophy />
-      <Protocol />
-      <Stats />
-      <Footer />
-    </div>
+    <LanguageProvider>
+      <div className="min-h-screen font-display bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 antialiased">
+        <Navbar />
+        <main>
+          <Hero />
+          <Features />
+          <Products />
+          <Process />
+          <FAQ />
+          <Location />
+        </main>
+        <Footer />
+      </div>
+    </LanguageProvider>
   );
 }
 

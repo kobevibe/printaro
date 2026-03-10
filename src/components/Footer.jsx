@@ -1,47 +1,67 @@
 import React from 'react';
+import { useLang } from '../LanguageContext';
 
 export default function Footer() {
+  const { t } = useLang();
   return (
-    <footer className="w-full bg-[#030812] rounded-t-[4rem] px-6 lg:px-24 py-16 mt-12 border-t border-white/5 relative z-20">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
-        <div className="col-span-1 md:col-span-2 flex flex-col gap-6">
-          <div className="text-2xl font-heading font-bold tracking-tight text-white flex items-center gap-2">
-            <div className="w-8 h-8 rounded-full bg-gradient-to-br from-corporate-accent2 to-corporate-accent1 flex items-center justify-center">
-              <div className="w-3 h-3 rounded-full bg-[#030812]"></div>
+    <>
+      <footer className="bg-slate-900 text-white pt-16 pb-24 px-4">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+          <div className="col-span-1 md:col-span-2">
+            <div className="flex items-center gap-2 mb-6">
+              <span className="material-symbols-outlined text-primary text-3xl">sticker</span>
+              <h2 className="text-2xl font-black tracking-tight">Printaro</h2>
             </div>
-            Printaro
+            <p className="text-slate-400 max-w-md">{t.footerDesc}</p>
           </div>
-          <p className="text-white/50 text-sm max-w-sm font-sans leading-relaxed">
-            Премиальное изготовление печатей и штампов в Ташкенте. Мы ценим ваше время и корпоративные стандарты. Работаем без задержек.
-          </p>
-          <div className="inline-flex items-center gap-3 px-4 py-2 rounded-full border border-white/5 bg-white/5 w-fit mt-4">
-            <div className="w-2 h-2 rounded-full bg-green-500 animate-pulse" />
-            <span className="text-xs font-mono text-white/50 tracking-widest uppercase">System Operational</span>
+          <div>
+            <h6 className="font-bold mb-6 uppercase text-sm tracking-widest text-primary">{t.navLabel}</h6>
+            <ul className="space-y-4 text-slate-400">
+              <li><a className="hover:text-white transition-colors" href="#">{t.nav1}</a></li>
+              <li><a className="hover:text-white transition-colors" href="#">{t.nav2}</a></li>
+              <li><a className="hover:text-white transition-colors" href="#">{t.nav3}</a></li>
+              <li><a className="hover:text-white transition-colors" href="#">{t.nav4}</a></li>
+            </ul>
+          </div>
+          <div>
+            <h6 className="font-bold mb-6 uppercase text-sm tracking-widest text-primary">{t.legalLabel}</h6>
+            <ul className="space-y-4 text-slate-400">
+              <li><a className="hover:text-white transition-colors" href="#">{t.legal1}</a></li>
+              <li><a className="hover:text-white transition-colors" href="#">{t.legal2}</a></li>
+              <li><a className="hover:text-white transition-colors" href="#">{t.legal3}</a></li>
+            </ul>
           </div>
         </div>
+        <div className="max-w-7xl mx-auto pt-8 border-t border-slate-800 text-center text-slate-500 text-sm">
+          <p>{t.copyright}</p>
+        </div>
+      </footer>
 
-        <div className="flex flex-col gap-4">
-          <h4 className="text-white font-semibold mb-2">Навигация</h4>
-          <a href="#features" className="text-white/50 hover:text-white transition-colors text-sm">Услуги</a>
-          <a href="#protocol" className="text-white/50 hover:text-white transition-colors text-sm">Процесс</a>
-          <a href="#stats" className="text-white/50 hover:text-white transition-colors text-sm">О компании</a>
+      <nav className="fixed bottom-0 left-0 right-0 z-50 bg-white dark:bg-slate-900 border-t border-primary/10 md:hidden">
+        <div className="flex justify-around items-center h-16">
+          <a className="flex flex-col items-center justify-center text-primary" href="#">
+            <span className="material-symbols-outlined">home</span>
+            <span className="text-[10px] font-bold">{t.mobileHome}</span>
+          </a>
+          <a className="flex flex-col items-center justify-center text-slate-400" href="#">
+            <span className="material-symbols-outlined">grid_view</span>
+            <span className="text-[10px] font-bold">{t.mobileProducts}</span>
+          </a>
+          <div className="relative -top-6">
+            <button className="bg-primary text-white w-14 h-14 rounded-full shadow-xl flex items-center justify-center">
+              <span className="material-symbols-outlined">add</span>
+            </button>
+          </div>
+          <a className="flex flex-col items-center justify-center text-slate-400" href="#">
+            <span className="material-symbols-outlined">chat</span>
+            <span className="text-[10px] font-bold">{t.mobileOrder}</span>
+          </a>
+          <a className="flex flex-col items-center justify-center text-slate-400" href="#">
+            <span className="material-symbols-outlined">location_on</span>
+            <span className="text-[10px] font-bold">{t.mobileContact}</span>
+          </a>
         </div>
-
-        <div className="flex flex-col gap-4">
-          <h4 className="text-white font-semibold mb-2">Контакты</h4>
-          <a href="tel:+998900000000" className="text-white/50 hover:text-white transition-colors text-sm">+998 (90) 000-00-00</a>
-          <a href="mailto:info@printaro.uz" className="text-white/50 hover:text-white transition-colors text-sm">info@printaro.uz</a>
-          <span className="text-white/50 text-sm">г. Ташкент, Сергелийский район</span>
-        </div>
-      </div>
-      
-      <div className="max-w-7xl mx-auto mt-16 pt-8 border-t border-white/5 flex flex-col md:flex-row items-center justify-between text-white/30 text-xs gap-4">
-        <p>© {new Date().getFullYear()} Printaro. Все права защищены.</p>
-        <div className="flex gap-4">
-          <a href="#" className="hover:text-white transition-colors">Политика конфиденциальности</a>
-          <a href="#" className="hover:text-white transition-colors">Договор оферты</a>
-        </div>
-      </div>
-    </footer>
+      </nav>
+    </>
   );
 }
