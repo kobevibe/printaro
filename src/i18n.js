@@ -130,10 +130,10 @@ export const translations = {
     step1Desc: 'Telegram orqali kompaniya nomi va rekvizitlaringiz bilan yozing.',
     step2Title: 'Maketni tasdiqlang',
     step2Desc: 'Dizaynerimiz 10 daqiqa ichida maket yuboradi. O\'zgartirish kerak bo\'lsa aytasiz.',
-    step3Title: 'Muhrni oling',
-    step3Desc: '20 daqiqada tayyor muhrni oling yoki shahar bo\'ylab yetkazib berishni buyurtma qiling.',
+    step3Title: 'Pechatni oling',
+    step3Desc: '20 daqiqada tayyor pechatni oling yoki shahar bo\'ylab yetkazib berishni buyurtma qiling.',
     stat1Label: 'Yillik tajriba',
-    stat2Label: 'Muhrlari tayyorlandi',
+    stat2Label: 'Pechatlari tayyorlandi',
     stat3Label: 'Rasmiy ishlab chiqarish',
 
     // FAQ
