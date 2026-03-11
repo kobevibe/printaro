@@ -5,7 +5,7 @@ export default function Footer() {
   const { t } = useLang();
   return (
     <>
-      <footer className="bg-slate-900 text-white pt-16 pb-24 px-4">
+      <footer className="bg-slate-900 text-white pt-16 pb-16 px-4">
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center gap-2 mb-6">
@@ -36,32 +36,6 @@ export default function Footer() {
           <p>{t.copyright}</p>
         </div>
       </footer>
-
-      <nav className="fixed bottom-0 left-0 right-0 z-50 bg-white dark:bg-slate-900 border-t border-primary/10 md:hidden">
-        <div className="flex justify-around items-center h-16">
-          <a className="flex flex-col items-center justify-center text-primary" href="#">
-            <span className="material-symbols-outlined">home</span>
-            <span className="text-[10px] font-bold">{t.mobileHome}</span>
-          </a>
-          <a className="flex flex-col items-center justify-center text-slate-400" href="#">
-            <span className="material-symbols-outlined">grid_view</span>
-            <span className="text-[10px] font-bold">{t.mobileProducts}</span>
-          </a>
-          <div className="relative -top-6">
-            <button className="bg-primary text-white w-14 h-14 rounded-full shadow-xl flex items-center justify-center">
-              <span className="material-symbols-outlined">add</span>
-            </button>
-          </div>
-          <a className="flex flex-col items-center justify-center text-slate-400" href="#">
-            <span className="material-symbols-outlined">chat</span>
-            <span className="text-[10px] font-bold">{t.mobileOrder}</span>
-          </a>
-          <a className="flex flex-col items-center justify-center text-slate-400" href="#">
-            <span className="material-symbols-outlined">location_on</span>
-            <span className="text-[10px] font-bold">{t.mobileContact}</span>
-          </a>
-        </div>
-      </nav>
     </>
   );
 }
