@@ -95,17 +95,7 @@ export default function Location() {
               </div>
             </div>
 
-            <div className="p-8 rounded-[2rem] bg-gradient-to-br from-primary to-blue-700 text-white shadow-2xl shadow-primary/20">
-              <h4 className="text-xl font-bold mb-3">Questions?</h4>
-              <p className="text-white/80 mb-6 text-sm">Our team is ready to help you with your layout and order via Phone.</p>
-              <a 
-                href="tel:+998900273535" 
-                className="inline-flex items-center gap-2 bg-white text-primary px-6 py-3 rounded-xl font-bold hover:bg-slate-50 transition-colors"
-              >
-                <span className="material-symbols-outlined text-xl">call</span>
-                Call for Support
-              </a>
-            </div>
+
           </div>
         </div>
       </div>
