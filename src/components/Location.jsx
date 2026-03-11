@@ -97,15 +97,13 @@ export default function Location() {
 
             <div className="p-8 rounded-[2rem] bg-gradient-to-br from-primary to-blue-700 text-white shadow-2xl shadow-primary/20">
               <h4 className="text-xl font-bold mb-3">Questions?</h4>
-              <p className="text-white/80 mb-6 text-sm">Our team is ready to help you with your layout and order via Telegram.</p>
+              <p className="text-white/80 mb-6 text-sm">Our team is ready to help you with your layout and order via Phone.</p>
               <a 
-                href="https://t.me/pechat_001" 
-                target="_blank" 
-                rel="noopener noreferrer"
+                href="tel:+998900273535" 
                 className="inline-flex items-center gap-2 bg-white text-primary px-6 py-3 rounded-xl font-bold hover:bg-slate-50 transition-colors"
               >
-                <span className="material-symbols-outlined text-xl">send</span>
-                Chat via Telegram
+                <span className="material-symbols-outlined text-xl">call</span>
+                Call for Support
               </a>
             </div>
           </div>
