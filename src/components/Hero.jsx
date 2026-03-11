@@ -22,7 +22,7 @@ export default function Hero() {
           </button>        </div>
         <div className="relative">
           <div className="aspect-square rounded-3xl overflow-hidden shadow-2xl bg-primary/5 border border-primary/10">
-            <img alt="Коллекция профессиональных печатей COLOP" className="w-full h-full object-cover" src="/hero-stamps.png"/>
+            <img alt="Коллекция профессиональных печатей COLOP" className="w-full h-full object-cover scale-105 origin-top-left" src="/hero-stamps.png"/>
           </div>
           <div className="absolute -bottom-6 -left-6 bg-white dark:bg-slate-800 p-6 rounded-2xl shadow-xl border border-primary/10 hidden md:block">
             <div className="flex items-center gap-4">
