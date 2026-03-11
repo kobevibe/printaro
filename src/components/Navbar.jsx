@@ -7,7 +7,7 @@ export default function Navbar() {
     <header className="sticky top-0 z-50 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md border-b border-primary/10">
       <div className="flex items-center p-4 justify-between max-w-7xl mx-auto">
         <div className="flex items-center gap-2">
-          <span className="material-symbols-outlined text-primary text-3xl">sticker</span>
+          <img src="/src/assets/logo.png" alt="Printaro Logo" className="h-10 w-auto rounded-full shadow-sm" />
           <h1 className="text-xl font-black tracking-tight text-primary">Printaro</h1>
         </div>
         <div className="flex items-center gap-3">
