@@ -1,5 +1,6 @@
 import React from 'react';
 import { useLang } from '../LanguageContext';
+import logo from '../assets/logo.png';
 
 export default function Footer() {
   const { t } = useLang();
@@ -9,7 +10,7 @@ export default function Footer() {
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center gap-2 mb-6">
-              <img src="/src/assets/logo.png" alt="Printaro Logo" className="h-12 w-auto rounded-full" />
+              <img src={logo} alt="Printaro Logo" className="h-12 w-auto rounded-full" />
               <h2 className="text-2xl font-black tracking-tight">Printaro</h2>
             </div>
             <p className="text-slate-400 max-w-md">{t.footerDesc}</p>
