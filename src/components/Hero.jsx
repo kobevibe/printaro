@@ -14,12 +14,12 @@ export default function Hero() {
           <p className="text-lg text-slate-600 dark:text-slate-400 mb-8 max-w-lg">
             {t.heroDesc}
           </p>
-          <button
-            onClick={() => document.getElementById('products').scrollIntoView({ behavior: 'smooth' })}
-            className="bg-primary text-white h-14 px-8 rounded-xl font-bold text-lg flex items-center gap-2 hover:bg-primary/90 transition-colors"
+          <a
+            href="tel:+998900273535"
+            className="bg-primary text-white h-14 px-8 rounded-xl font-bold text-lg flex items-center justify-center gap-2 hover:bg-primary/90 transition-all shadow-lg shadow-primary/25"
           >
-            {t.heroBtn2} <span className="material-symbols-outlined">arrow_forward</span>
-          </button>        </div>
+            {t.nav4} <span className="material-symbols-outlined">call</span>
+          </a>        </div>
         <div className="relative">
           <div className="aspect-square rounded-3xl overflow-hidden shadow-2xl bg-primary/5 border border-primary/10">
             <img alt="Коллекция профессиональных печатей COLOP" className="w-full h-full object-cover" src="/hero-stamps.png"/>
